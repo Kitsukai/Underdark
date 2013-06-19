@@ -1,4 +1,4 @@
-package com.gildorym.underdark;
+package com.gildorymrp.underdark;
 
 import java.util.Random;
 

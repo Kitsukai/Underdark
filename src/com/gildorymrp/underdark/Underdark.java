@@ -1,4 +1,4 @@
-package com.gildorym.underdark;
+package com.gildorymrp.underdark;
 
 import org.bukkit.generator.ChunkGenerator;
 import org.bukkit.plugin.java.JavaPlugin;
