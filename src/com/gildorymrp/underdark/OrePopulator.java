@@ -15,7 +15,7 @@ public class OrePopulator extends BlockPopulator {
 		this.random = new Random(world.getSeed());
 	}
 	
-	private void createPocket(World world, Material oreType, int size, int x, int y, int z){
+	private void createPocket(World world, Material oreType, int size, int x, int y, int z) {
 		float f = this.random.nextFloat() * 3.141593F;
 
 		double d1 = x + 8 + Math.sin(f) * size / 8.0F;

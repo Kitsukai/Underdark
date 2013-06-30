@@ -12,9 +12,21 @@ import org.bukkit.util.noise.SimplexOctaveGenerator;
 
 public class UnderdarkGenerator extends ChunkGenerator {
 	
+	private Underdark plugin;
+	
+	public UnderdarkGenerator(Underdark plugin) {
+		this.plugin = plugin;
+	}
+	
 	public List<BlockPopulator> getDefaultPopulators(World world) {
 		List<BlockPopulator> populators = new ArrayList<BlockPopulator>();
 		populators.add(new OrePopulator(world));
+		if (plugin.getConfig().getBoolean("worlds." + world.getName() + ".caves-enabled", true)) {
+			populators.add(new CavePopulator());
+		}
+		if (plugin.getConfig().getBoolean("worlds." + world.getName() + ".ridges-enabled", true)) {
+			populators.add(new RidgePopulator());
+		}
 		return populators;
 	}
 	

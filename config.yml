@@ -1,0 +1,4 @@
+worlds:
+    underdark:
+        caves-enabled: true
+        ridges-enabled: true
