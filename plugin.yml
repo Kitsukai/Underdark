@@ -1,4 +1,5 @@
-name: Underdark
+name: ${project.name}
 author: Lucariatias
-version: 0.1.1
+version: ${project.version}
+description: ${project.description}
 main: com.gildorymrp.underdark.Underdark

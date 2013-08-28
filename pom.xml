@@ -2,7 +2,9 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.gildorymrp</groupId>
   <artifactId>underdark</artifactId>
-  <version>0.1.1</version>
+  <version>0.2</version>
+  <name>Underdark</name>
+  <description>Generates underdark-like terrain</description>
   <repositories>
     <repository>
       <id>bukkit-repo</id>
@@ -17,7 +19,17 @@
     </dependency>
   </dependencies>
   <build>
+    <defaultGoal>clean install</defaultGoal>
     <sourceDirectory>src</sourceDirectory>
+    <resources>
+      <resource>
+        <directory></directory>
+        <filtering>true</filtering>
+        <includes>
+          <include>**/plugin.yml</include>
+        </includes>
+      </resource>
+    </resources>
     <plugins>
       <plugin>
         <artifactId>maven-compiler-plugin</artifactId>
