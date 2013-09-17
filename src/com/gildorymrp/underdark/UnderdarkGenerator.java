@@ -30,6 +30,7 @@ public class UnderdarkGenerator extends ChunkGenerator {
 		return populators;
 	}
 	
+	@SuppressWarnings("deprecation") //TODO: Find a way to do this without using deprecated methods
 	private void setBlock(byte[][] result, int x, int y, int z, Material material) {
 		byte blockId = (byte) material.getId();
 		if (result[y >> 4] == null) {
